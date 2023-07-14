@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="documentatie.css">
+	<title>Documentatie</title>
+</head>
+<body>
+
+      <section>      
+        <h6>Scopul proiectului.</h6>
+          <p>
+            - MaBOr este un site menit sa vina in ajutorul persoanelor ce vor sa planifice baluri mascate pe diferite teme simplu si rapid fara a-si face griji de unele aspecte organizatorice de care se ocupa automat platforma.
+          </p>
+      </section> 
+
+	    <section>      
+        <h6>Functionalitati ale proiectului.</h6>
+        <p>- Expediere de invitatii automata(invitatii standard sau personalizate).<br><br>
+
+          - Impunerea unor restrictii sau reguli de comportament ce privesc muzica, persoanele eligibile sa participe, etc.<br><br>
+
+          - Managementul de catre organizatori a participantilor identificait pe baza unei adrese de e-mail, a unui cod numeric ori QR generat de sistem.<br><br>
+
+          - Colectarea de impresii cum ar fi mesaje textuale, fotografii preluate prin "upload", etc. Si posibilitatea partajarii acestora pe retele de socializare.<br><br>
+
+          - Toate datele gestionate, inclusiv statistici de interes, vor fi disponibile sub forma de resurse CSV si JSON.<br><br>
+        </p>
+        </section> 
+
+     <section>
+     <h6>Categorii de utilizatori.</h6>
+        <p>
+          - Musafiri: utilizatori nelogati ce pot vizite site-ul si pot vedea toate optiunile neputand sa creeze baluri.<br><br>
+          - Membrii: utilizatori ce si-au creat cont prin intermediul platformei MaBOr si sunt logati cu acesta, pe langa musafiri, acestia pot crea baluri.
+        </p>
+      </section>  
+
+      <section>      
+      <h6>Operating environment.</h6>
+        <p>Tehnologiile utilizate sunt:<br><br>
+        - HTML<br><br>
+        - CSS<br><br>
+        - PHP<br><br>
+        - SQL</p>
+      </section> 
+
+      <section>      
+      <h6>Manual de utilizare.</h6>
+        <p> 
+        Credentialele utilizatorilor inregistrati cat si balurile disponibile vor fi stocate intr-o baza de date,
+        in procesul de logare se va face o interogare in baza de date a utilizatorilor pentru a determina daca
+        datele de logare introduse corespund cu cele ale vreunui utilizator inregistrat, in caz pozitiv, logand acel utilizator,
+        in caz negativ se va afisa un mesaj de eroare.<br>
+        Atunci cand un utilizator doreste sa trimita invitatii automat prin email la un anumit bal, acesta va introduce username-ul
+        utilizatorilor pe care doreste sa ii invite iar sistemul va face o interogare in baza de date pentru a gasi adresele lor de
+        email si a trimite invitatiile.
+        </p>
+      </section> 
+
+    <section>
+    <h6>Dependinte.</h6>
+        <p>
+        - Pagina de home pentru utilizatori nelogati face legatura cu pagina de register si pagina de login.<br><br>
+
+        - Pagina de home pentru utilizatori logati face legatura cu pagina de creare bal.<br><br>
+
+        - Pagina de login face legatura cu pagina de home pentru utilizatori logati si respectiv utilizatori nelogati, si pagina de register.<br><br>
+
+        - Pagina de register face legatura cu pagina de login, si paginile de home pentru utilizatori nelogati si respectiv utilizatori logati.<br><br>
+
+        - Pagina de creare bal face legatura cu pagina de home pentru utilizatori logati.
+          </p>
+      </section>  
+
+      <section>
+        <h6>Interfete de comunicare.</h6>
+        <p>
+          - Comunicarea de baza intre utilizatori si server se va face printr-un meniu de logare, prin doua pagini html care vor face logarea si inregistrarea utilizatorilor pe pagina.<br><br>
+          - Utilizatori logati in sistem vor putea genera o invitatie la unul dintre  balurile mascate create de alti utilizatori. Invitatia si comunicarea cu utilizatorul in acest caz se va face pe baza de email, astfel ca utilizatorul va fi notificat de inceperea balului si va primi o invitatie personalizata.<br><br>
+          - Accesul la resurse si reprezentarea resurselor web se va realiza prin interemediul protocolului HTTP.
+        </p>
+      </section>
+
+
+    <section>      
+      <h6>Caracteristicile systemului.</h6>
+        <p>
+        - Inregistrarea - Utilizatori care nu au un cont in sistem se pot inregistra printr-o pagina de inregistrare. Vor avea nevoie de un username, o parola, si o adresa de email.<br><br>
+        - Logarea - Utilizatorii care au un cont in sistem se vor putea loga si vor putea vede pe pagina principala faptul ca sunt logati si isi vor putea accese anumite caracteristici: informatiile lor, poza de profil si numarul de baluri organizate, impreuna cu numarul de baluri participate.<br><br>
+        - Informatii privind balurile disponibile - Pe pagina principala toti utilizatorii(si cei nelogati) pot viziona balurile valabile, insa doar cei logati pot genera o invitatie catre acel bal, care va veni prin email.<br><br>
+        - Revizuire bal - Un bal care s-a terminat va mai aparea pe pagina dupa ceva timp ca sa poata primi un scor cu un anumit numar de stele(de la 1-5), review care va putea fi dat si in timpul balului.<br><br>
+        - Generare invitatii - Utilizatorii care sunt logati vor putea primi pe email o invitatie personalizata catre orice bal disponibil(care inca nu a inceput/sau inca nu s-a terminat) pe care o vor putea utiliza pentru a participa la bal.<br><br>
+        - Creare bal - Un utilizator logat poate folosi functia de creare bal care il va redirectiona pe o alta pagina in care va putea crea balul. Va trebui sa ofere diferite informatii cum ar fi ziua si intervalul orar la care va avea loc balul, iar dupa ce utilizatorul va submite informatiile va aparea, pe pagina principala, un anunt personalizat cu balul tocmai creat. Se va verifica ca informatiile sa fie valide(sa nu se aleaga o zi care a trecut deja, un interval orar prea scurt) si anuntul catre bal va fi creat.
+      </p>
+      </section>  
+
+      <section>
+        <h6>Cerinte de securitate.</h6>
+        <p>
+        - Prima metoda de securitate se refera la regurile de indentificare utilizate pentru intregistrare, in acest caz utilizatorul nu se va putea inregistra fara o adresa de email valida, pe care va primi un mesaj prin care va putea finaliza inregistrarea.<br><br>
+        - Se vor aplica si metode de prevenire si tratare a sql injections, deoarece este cea mai utilizata metoda de hacking si de obtinere a unor informatii sensibile despre utilizatori.
+      </p>
+      </section>
+     
+</body>
+</html>

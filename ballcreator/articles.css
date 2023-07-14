@@ -1,0 +1,92 @@
+article {
+  display: inline-block;
+  color: whitesmoke;
+  padding-left: 10%;
+  margin-left:35%;
+  margin-right: 35%;
+  padding-right: 10%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+
+}
+.cabaret{
+  background-image: url("cabaret.png");
+  background-size: cover; 
+}
+.futurism{
+  background-image: url("futurism.jpg");
+  background-size: cover; 
+}
+.mitologie{
+  background-image: url("mitologie.jpg");
+  background-size: cover; 
+}
+.medieval{
+  background-image: url("medieval.jpg");
+  background-size: cover; 
+}
+.victorian{
+  background-image: url("victorian.jpg");
+  background-size: cover; 
+}
+.sp{
+  color: darkred;
+}
+body{
+  background-color: skyblue; 
+  height: 100%; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover; 
+}
+h2{
+    font-family: Algerian, Helvetica, sans-serif;
+    color: greenyellow;
+    text-align: center;
+    border-width: 1px;
+    border-style: solid;
+
+}
+.event{
+  color: whitesmoke;
+  font-family: Arial, Helvetica, sans-serif; 
+  font-size: 40px;
+  text-transform: uppercase;
+}
+p{
+   background: rgba(50, 50, 50, 0.3);
+  font-size: 30px;
+  color: skyblue;
+  font-family: "Times New Roman", Times, serif;
+  text-align: left;
+}
+
+.shown{
+  display: block;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.hidden{
+  display: none;
+} 
+
+.desfasurare{
+  color: darkred;
+}
+.like{
+  height: 10%;
+  width: 30%;
+}
+.dislike{
+  height: 10%;
+  width: 25%;
+}
+.label{
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.textfield{
+  width: 80%;
+  font-size: 15px;
+}

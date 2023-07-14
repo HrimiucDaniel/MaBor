@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="create.css">
+	<title>Create event</title>
+</head>
+<body>	
+
+	<section class="center">
+	<h1> CREAZA PROPRIUL BAL MASCAT</h1>
+	<br><br><br><br><br><br><br><br><br><br>
+
+
+	<form  action="resource_saver.php" method="post">
+
+		<label for="events" class="events_label">Alege tematica balului mascat:</label>
+		<br>
+ 		<select name="events" id="events"  class="events_select" size="1" required>
+    <option value="cabaret">Cabaret</option>
+    <option value="futurism">Futurism</option>
+    <option value="Mitologie">Mitologie</option>
+    <option value="Medieval">Medieval</option>
+    <option value="Victorian">Victorian</option>
+ 		</select>
+
+    <br><br>
+    <label for="name" class="events_label" >Denumirea balului mascat:</label><br>
+    <input type="text" id="name" name="name" class="events_select"  required>	
+
+	
+    <br><br>
+    <label for="date" class="events_label" >Data la care se va tine balul:</label><br>
+    <input type="date" id="date" name="date" class="events_select"  required>	
+
+    <br><br>
+  	<label for="hour"  class="events_label" >Alege intervalul orar in care se va tine balul mascat:</label><br>
+		<label for="hour1" class="events_label">Start Time:</label><input type="time" id="hour1" name="hour1" min="08:00" max="24:00" class="events_select"  required>
+		<label for="hour2" class="events_label">End Time:</label><input type="time" id="hour2" name="hour2" min="08:00" max="24:00" class="events_select"  required>
+
+		<br><br>
+    <label for="number" class="events_label" >Alege numarul maxim de persoane:(optional)</label><br>
+		<input type="number" id="number"  class="events_select"  name="number">
+		<br><br>
+		<label for="stile" class="events_label">Stil privind decoratiunile interioare sau muzica:(optional)</label><br>
+    <input type="text" id="stile" class="events_select"  name="stile">
+
+    <br><br>
+    <input type="checkbox"  class="events_select"  id="interdict" name="interdict">
+	  <label for="interdict" class="events_label">Consumul de carne interzis</label>
+
+
+    <br><br>
+    <input type="checkbox"  class="events_select" id="adult" name="adult">
+		<label for="adult" class="events_label">Destinat doar persoanelor adulte</label>
+
+		<br><br>
+		<input class="events_select"  type="submit" id="submit" name="submit" value="Submit">
+	</form>
+	</section>
+
+</body>
+</html>
